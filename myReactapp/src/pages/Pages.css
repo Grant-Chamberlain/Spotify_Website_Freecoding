@@ -1,0 +1,242 @@
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.page h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.page-subtitle {
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+/* ---------- About ---------- */
+.about-section {
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.about-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.team-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #646cff;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+}
+
+.team-card h3 {
+  margin: 0 0 0.25rem;
+}
+
+.team-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.9rem;
+}
+
+/* ---------- Resume ---------- */
+.resume-section {
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.resume-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #646cff;
+  display: inline-block;
+}
+
+.resume-entry {
+  margin-bottom: 1.5rem;
+}
+
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.resume-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.resume-date {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.resume-company {
+  margin: 0.15rem 0 0.5rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.95rem;
+}
+
+.resume-entry ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.resume-entry li {
+  margin-bottom: 0.3rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: rgba(100, 108, 255, 0.15);
+  color: #a5abff;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ---------- Contact ---------- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #646cff;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  background: #646cff;
+  color: #fff;
+  border: none;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-form button:hover {
+  background: #535bf2;
+}
+
+.contact-success {
+  text-align: center;
+}
+
+.contact-success button {
+  margin-top: 1rem;
+  background: #646cff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.contact-success button:hover {
+  background: #535bf2;
+}
+
+/* ---------- Light mode overrides ---------- */
+@media (prefers-color-scheme: light) {
+  .page-subtitle {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .team-card {
+    background: rgba(0, 0, 0, 0.04);
+  }
+
+  .team-card p {
+    color: rgba(0, 0, 0, 0.55);
+  }
+
+  .resume-date {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  .resume-company {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .resume-entry li {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .skill-tag {
+    background: rgba(100, 108, 255, 0.1);
+    color: #4f56c9;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    border-color: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.03);
+  }
+}
